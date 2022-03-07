@@ -9,34 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var books = [Book]()
+    @State var brands = [Brands]()
     
     var body: some View {
-        List(books) { book in
+        List(brands) { brand in
             
             VStack(alignment: .leading) {
                 
-                Text("\(book.title)")
+                Text("\(brand.brandname)")
                     .font(.title)
-                    .foregroundColor(.green)
+                    .foregroundColor(.black)
                     .padding(.bottom)
                 
                 HStack{
-                    Text("\(book.author)")
-                        .font(.body)
-                        .fontWeight(.bold)
-                    Text("\(book.email)")
+                    Text("\(brand.brandline)")
                         .font(.body)
                         .fontWeight(.semibold)
                 }
+                .padding(0.0)
                 Spacer()
             }
+            .padding(.all, 0.0)
         }
         .onAppear() {
-            Api().loadData { (books) in
-                   self.books = books
+            Api().loadData { (brands) in
+                   self.brands = brands
                 }
-            }.navigationTitle("Book List")
+            }.navigationTitle("Brand List")
     }
 }
 
