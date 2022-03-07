@@ -21,12 +21,12 @@ struct ContentView: View {
                     .foregroundColor(.black)
                     .padding(.bottom)
                 
-                HStack{
-                    Text("\(brand.brandline)")
-                        .font(.body)
-                        .fontWeight(.semibold)
-                }
-                .padding(0.0)
+//                HStack{
+//                    Text("\(brand.brandline)")
+//                        .font(.body)
+//                        .fontWeight(.semibold)
+//                }
+//                .padding(0.0)
                 Spacer()
             }
             .padding(.all, 0.0)
@@ -36,6 +36,11 @@ struct ContentView: View {
                    self.brands = brands
                 }
             }.navigationTitle("Brand List")
+        .refreshable() {
+            Api().loadData { (brands) in
+                   self.brands = brands
+                }
+        }.navigationTitle("Brand List")
     }
 }
 
