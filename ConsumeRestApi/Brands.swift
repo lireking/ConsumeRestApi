@@ -15,7 +15,7 @@ struct Brands: Codable, Identifiable {
 }
 
 class Api : ObservableObject{
-    @Published var books = [Brands]()
+    @Published var brands = [Brands]()
     
     func loadData(completion:@escaping ([Brands]) -> ()) {
         
