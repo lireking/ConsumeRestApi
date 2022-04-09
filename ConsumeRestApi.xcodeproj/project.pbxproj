@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304FCF0427DA10C9007A249E /* SalewaDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304FCF0327DA10C9007A249E /* SalewaDay.swift */; };
 		305B835627D6437900E450C6 /* Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B835527D6437900E450C6 /* Brands.swift */; };
 		306016D527D0E6350071A97F /* ConsumeRestApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306016D427D0E6350071A97F /* ConsumeRestApiApp.swift */; };
 		306016D727D0E6350071A97F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306016D627D0E6350071A97F /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		304FCF0327DA10C9007A249E /* SalewaDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalewaDay.swift; sourceTree = "<group>"; };
 		305B835527D6437900E450C6 /* Brands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brands.swift; sourceTree = "<group>"; };
 		306016D127D0E6350071A97F /* ConsumeRestApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsumeRestApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306016D427D0E6350071A97F /* ConsumeRestApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumeRestApiApp.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				306016D827D0E6360071A97F /* Assets.xcassets */,
 				306016DA27D0E6360071A97F /* Preview Content */,
 				305B835527D6437900E450C6 /* Brands.swift */,
+				304FCF0327DA10C9007A249E /* SalewaDay.swift */,
 			);
 			path = ConsumeRestApi;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				305B835627D6437900E450C6 /* Brands.swift in Sources */,
+				304FCF0427DA10C9007A249E /* SalewaDay.swift in Sources */,
 				306016D727D0E6350071A97F /* ContentView.swift in Sources */,
 				306016D527D0E6350071A97F /* ConsumeRestApiApp.swift in Sources */,
 			);

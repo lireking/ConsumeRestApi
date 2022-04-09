@@ -20,17 +20,22 @@ struct ContentView: View {
                     .font(.title)
                     .foregroundColor(.black)
                     .padding(.bottom)
+                    //.padding(.top)
                 
-//                HStack{
-//                    Text("\(brand.brandline)")
-//                        .font(.body)
-//                        .fontWeight(.semibold)
-//                }
-//                .padding(0.0)
-                Spacer()
+                HStack{
+                    Text("\(brand.brandline)")
+                        .font(.body)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.black)
+                }
+                .padding(0.0)
+                //Divider()
+                //Spacer()
             }
             .padding(.all, 0.0)
+            //.background(Color.white)
         }
+        .background(Color.white)
         .onAppear() {
             Api().loadData { (brands) in
                    self.brands = brands

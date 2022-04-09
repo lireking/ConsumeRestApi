@@ -28,10 +28,10 @@ class Api : ObservableObject{
             request.addValue("IbD33WglCJ5pBPJxhDkUf6xEFXLH5XT04IrGOsmu", forHTTPHeaderField: "x-api-key")
             request.httpMethod = "GET"
             URLSession.shared.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
-                let books = try! JSONDecoder().decode([Brands].self, from: data!)
+                let brands = try! JSONDecoder().decode([Brands].self, from: data!)
                     //print(books)
                     DispatchQueue.main.async {
-                        completion(books)
+                        completion(brands)
                     }
             }.resume()
         }
